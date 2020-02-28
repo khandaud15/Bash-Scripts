@@ -13,11 +13,11 @@
 # Download genome annotation files from https://gdc.cancer.gov/about-data/data-harmonization-and-generation/gdc-reference-files
 # wget https://gdc-api.nci.nih.gov/data/62f23fad-0f24-43fb-8844-990d531947cf; mv 62f23fad-0f24-43fb-8844-990d531947cf GRCh38.d1.vd1.fa.tar.gz; tar -zxvf GRCh38.d1.vd1.fa.tar.gz
 # wget https://gdc-api.nci.nih.gov/data/fe1750e4-fc2d-4a2c-ba21-5fc969a24f27; mv fe1750e4-fc2d-4a2c-ba21-5fc969a24f27 gencode.v22.annotation.gtf.gz; gzip -d gencode.v22.annotation.gtf.gz
-DIRINDEX=/home/mdozmorov/sequencing/data/ExtData/UCSC/hg38gdc
+DIRINDEX=/home/mdozmorov/sequencing/data/ExtData/hg38gdc
 INDEXGENOME=$DIRINDEX"/GRCh38.d1.vd1.fa"
 INDEXGENE=$DIRINDEX"/gencode.v22.annotation.gtf"
 
-# DIRINDEX=/home/sequencing/data/ExtData/UCSC/mm10
+# DIRINDEX=/home/sequencing/data/ExtData/mm10
 # INDEXGENOME=$DIRINDEX"/mm10.fa"
 # INDEXGENE=$DIRINDEX"/Mus_musculus.GRCm38.83_filt.gtf"
 

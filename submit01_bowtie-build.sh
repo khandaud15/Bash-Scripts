@@ -2,10 +2,9 @@
 #PBS -S /bin/bash
 #PBS -V
 #PBS -l nodes=1:ppn=1
-#PBS -M mdozmorov@vcu.edu
 #PBS -N btbuild
 #PBS -j oe
-# PBS -o /home/glasser/Dissertation/Dozmorov/RNA-seq/cuffdiffout3
+# PBS -o /home/RNA-seq/cuffdiffout3
 
 cd $PBS_O_WORKDIR
 

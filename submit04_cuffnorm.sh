@@ -2,10 +2,9 @@
 #PBS -S /bin/bash
 #PBS -V
 #PBS -l nodes=1:ppn=10
-#PBS -M mdozmorov@vcu.edu
 #PBS -N cuffquant
 #PBS -j oe
-# PBS -o /home/glasser/Dissertation/Dozmorov/RNA-seq/cuffdiffout3
+# PBS -o /home/glasser/RNA-seq/cuffdiffout3
 
 cd $PBS_O_WORKDIR
 
@@ -15,11 +14,11 @@ cufflinks -p 10 -o 04_cufflinks -G /home/sequencing/data/ExtData/UCSC/hg38/Homo_
 for file in 03_sorted/*.bam; do 
 	echo $file;
 	cat > submit04_cuffnorm_`basename $file .bam`.sh << EOT
+	
 #!/bin/bash
 #PBS -S /bin/bash
 #PBS -V
 #PBS -l nodes=1:ppn=10
-#PBS -M mdozmorov@vcu.edu
 #PBS -N cufflinks
 #PBS -j oe
 # PBS -o /home/glasser/Dissertation/Dozmorov/RNA-seq/cuffdiffout3

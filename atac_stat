@@ -1,0 +1,20 @@
+#!/bin/bash
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=6
+#SBATCH --time=01:00:00
+#SBATCH --mem=40000
+#SBATCH --partition=standard
+#SBATCH --account=cphg-millerlab
+
+module load samtools
+
+DIRIN=/sfs/qumulo/qproject/cphg-millerlab/CAD_QTL/coronary_QTL/epigenome/atac/bam
+
+
+# Output file
+FOUT=atac_flagstat.txt
+
+for file in `find $DIRIN -type f -name "*.bam" | sort`; do
+                echo $file >> $FOUT;
+        samtools flagstat $file >> $FOUT;
+done

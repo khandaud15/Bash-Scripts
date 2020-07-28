@@ -9,6 +9,6 @@
 cd $PBS_O_WORKDIR
 
 bowtie-build2 /home/sequencing/data/ExtData/UCSC/hg38/hg38.fa /home/sequencing/data/ExtData/UCSC/hg38/hg38 
-# /home/mdozmorov/.local/bin/bowtie2-build /home/sequencing/data/ExtData/UCSC/mm9/mm9.fa /home/sequencing/data/ExtData/UCSC/mm9/mm9
-# /home/mdozmorov/.local/bin/bowtie2-build /home/sequencing/data/ExtData/UCSC/mm10/mm10.fa /home/sequencing/data/ExtData/UCSC/mm10/mm10
+# /local/bin/bowtie2-build /home/sequencing/data/ExtData/UCSC/mm9/mm9.fa /home/sequencing/data/ExtData/UCSC/mm9/mm9
+# /local/bin/bowtie2-build /home/sequencing/data/ExtData/UCSC/mm10/mm10.fa /home/sequencing/data/ExtData/UCSC/mm10/mm10
 
